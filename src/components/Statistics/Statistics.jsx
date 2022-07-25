@@ -4,20 +4,18 @@ import styles from "./Statistics.module.scss"
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className={`${styles.statistics} section`} id="statistics">
-      <div className={styles.container}>
-        {title && <h2 className={styles.title}>{title}</h2>}
-      
-        <ul className={styles.statList}>
-          {stats.map(stat => (
-            <li className={styles.item} key={stat.id}>
-                <span className="label">{stat.label}</span>
-                <span className="percentage">{stat.percentage}%</span>
-              </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+    <div className={styles.container}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+    
+      <ul className={styles.statList}>
+        {stats.map(stat => (
+          <li className={styles.item} key={stat.id}>
+              <span className="label">{stat.label}</span>
+              <span className="percentage">{stat.percentage}%</span>
+            </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

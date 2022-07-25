@@ -18,6 +18,8 @@ import Button from 'components/Button/Button';
 import buttons from './data/buttons.json';
 import styles from './components/Button/Button.module.scss';
 
+import stylesStat from './components/Statistics/Statistics.module.scss';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -33,7 +35,10 @@ root.render(
       avatar={user.avatar}
       stats={user.stats}
     />
-    <Statistics title="Upload stats" stats={data} />
+    <section className={`${stylesStat.statistics} section`} id="statistics">
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
+    </section>
     <FriendList friends={friends} />
     <TransactionHistoryTable transactions={transactions} />
   </React.StrictMode>
