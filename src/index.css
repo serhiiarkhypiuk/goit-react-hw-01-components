@@ -1,5 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,4 +16,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#root {
+  background: linear-gradient(to right top, #1367c2, #fcf943);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

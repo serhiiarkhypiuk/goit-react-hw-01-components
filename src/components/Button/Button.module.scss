@@ -1,0 +1,20 @@
+.sectionButtons {
+  height: 5vh;
+  max-width: 10vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  color: #000;
+  cursor: pointer;
+}

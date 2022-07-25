@@ -14,9 +14,18 @@ import friends from './friends.json';
 import TransactionHistoryTable from './components/TransactionHistoryTable/TransactionHistoryTable';
 import transactions from './transactions.json';
 
+import Button from 'components/Button/Button';
+import buttons from './buttons.json';
+import styles from './components/Button/Button.module.scss';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <section className={styles.sectionButtons}>
+      {buttons.map(button => (
+        <Button key={button.id} btnText={button.text} btnLink={button.link} />
+      ))}
+    </section>
     <Profile
       username={user.username}
       tag={user.tag}

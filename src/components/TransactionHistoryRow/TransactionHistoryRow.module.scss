@@ -1,0 +1,9 @@
+.row {
+  text-align: center;
+  font-size: 1.2rem;
+  & .item {
+    border: 1px solid #ddd;
+    padding: 10px
+  }
+}
+

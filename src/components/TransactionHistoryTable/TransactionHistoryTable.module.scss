@@ -1,0 +1,17 @@
+.transactionHistory {
+  border-radius: 5px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 30%;
+  max-width: 80%;
+  white-space: nowrap;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 10px 10px 5px #888888;
+    & .item {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 1.5rem;
+  }
+}

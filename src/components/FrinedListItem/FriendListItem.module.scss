@@ -1,0 +1,39 @@
+.status {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 5rem;
+  right: 1.55rem;
+}
+
+.statusTrue {
+  background-color: green;
+}
+
+.statusFalse {
+  background-color: red;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.avatar {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}

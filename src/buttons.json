@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "link": "profile",
+    "text": "Profile"
+  },
+  {
+    "id": "2",
+    "link": "statistics",
+    "text": "Statistics"
+  },
+  {
+    "id": "3",
+    "link": "friendsList",
+    "text": "Friends list"
+  },
+  {
+    "id": "4",
+    "link": "transactions",
+    "text": "Transactions"
+  }
+]
